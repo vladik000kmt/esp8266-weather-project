@@ -93,7 +93,7 @@ for event in longpoll.listen():
 
             vk.messages.send(
                 peer_id=peer,
-                message=f"🌡️Температура: {temperature} \n💧Влажность: {humidity} \n🗜Давление: {pressure} \n‍💨Углекислый газ: {carbon_dioxide} \n\n📍 Выберите локацию:",
+                message=f"🌡️Температура: {temperature} °C\n💧Влажность: {humidity} %\n🗜Давление: {pressure} мм рт. ст.\n‍💨Углекислый газ: {carbon_dioxide} ppm\n\n📍 Выберите локацию:",
                 keyboard=locations().get_keyboard(),
                 random_id=random.randint(1, 999999)
             )
